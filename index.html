@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hà Phạm Duyên Anh | Marketing Manager Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-shadow {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
+        }
+        section { padding: 100px 20px; }
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 0.8px, transparent 0.8px);
+            background-size: 24px 24px;
+        }
+        .placeholder-box {
+            background: #f1f5f9;
+            border: 2px dashed #cbd5e1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 32px;
+            color: #94a3b8;
+            transition: all 0.3s ease;
+        }
+        .placeholder-box:hover {
+            border-color: #3b82f6;
+            background: #eff6ff;
+            color: #3b82f6;
+        }
+        .skill-tag {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #475569;
+        }
+    </style>
+</head>
+<body class="bg-pattern text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-card border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-xl font-extrabold tracking-tighter text-slate-900 leading-none">DUYÊN ANH.</span>
+                <span class="text-[10px] font-bold text-blue-600 tracking-widest uppercase mt-1">Marketing Manager</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+                <a href="#overview" class="hover:text-blue-600 transition">Tổng quan</a>
+                <a href="#mindset" class="hover:text-blue-600 transition">Tư duy</a>
+                <a href="#casestudies" class="hover:text-blue-600 transition">Dự án</a>
+                <a href="#leadership" class="hover:text-blue-600 transition">Lãnh đạo</a>
+                <a href="#contact" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition transform hover:-translate-y-0.5 shadow-lg">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Slide 1) -->
+    <header class="pt-40 pb-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="animate-fade-in">
+                <div class="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-widest mb-8">Portfolio 2024</div>
+                <h1 class="text-5xl md:text-8xl font-black mb-6 leading-[1.1] tracking-tighter gradient-text">
+                    HÀ PHẠM<br>DUYÊN ANH
+                </h1>
+                <p class="text-2xl text-slate-500 font-medium mb-10 leading-relaxed">
+                    Xây dựng hệ thống Marketing tạo ra tăng trưởng doanh thu bền vững.
+                </p>
+                <div class="flex flex-wrap gap-6 mb-12">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-blue-600"><i class="fas fa-phone-alt"></i></div>
+                        <span class="font-bold">0799 079 911</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-blue-600"><i class="fas fa-envelope"></i></div>
+                        <span class="font-bold lowercase">haphamduyenanh402@gmail.com</span>
+                    </div>
+                </div>
+                <a href="#casestudies" class="inline-flex items-center px-10 py-5 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-2xl group">
+                    Xem Case Studies
+                    <i class="fas fa-arrow-right ml-3 group-hover:translate-x-2 transition"></i>
+                </a>
+            </div>
+            <div class="relative">
+                <div class="aspect-[4/5] placeholder-box shadow-2xl">
+                    <i class="fas fa-user-tie text-7xl opacity-20 mb-4"></i>
+                    <p class="text-xs font-bold tracking-widest uppercase">Ảnh đại diện Portfolio</p>
+                </div>
+                <div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-[32px] shadow-2xl border border-slate-100 max-w-[260px]">
+                    <p class="text-4xl font-black text-blue-600 mb-2">10+</p>
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-widest leading-tight">Năm kinh nghiệm trong ngành Marketing</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview (Slide 2) -->
+    <section id="overview" class="bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="order-2 md:order-1 grid grid-cols-2 gap-4">
+                    <div class="aspect-square placeholder-box card-shadow"></div>
+                    <div class="aspect-square placeholder-box card-shadow mt-12"></div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-4xl font-black mb-8 tracking-tighter uppercase">Tôi là ai?</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                        Tôi là Marketing Manager với kinh nghiệm đa dạng: **Thời trang – Cưới, Giáo dục, FMCG và Công nghệ.** Thế mạnh cốt lõi là kết nối **Marketing – Sales – Trải nghiệm khách hàng** để tạo ra doanh thu thực tế, không chỉ dừng lại ở chỉ số ảo.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center p-6 bg-white rounded-3xl card-shadow">
+                            <div class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center mr-6"><i class="fas fa-users"></i></div>
+                            <div>
+                                <h4 class="font-bold">Quản lý đội ngũ</h4>
+                                <p class="text-sm text-slate-500 font-medium">Quy mô từ 5 – 12 nhân sự chuyên môn đa nhiệm.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-6 bg-white rounded-3xl card-shadow">
+                            <div class="w-12 h-12 bg-green-600 text-white rounded-2xl flex items-center justify-center mr-6"><i class="fas fa-chart-line"></i></div>
+                            <div>
+                                <h4 class="font-bold">Vận hành doanh số</h4>
+                                <p class="text-sm text-slate-500 font-medium">Hệ thống đạt 1.5 – 2 tỷ/tháng bền vững.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mindset & Core Competency (Slide 3-4) -->
+    <section id="mindset" class="bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl font-black mb-6 tracking-tighter uppercase">Tư duy Marketing</h2>
+                <p class="text-xl text-slate-500 font-medium leading-relaxed italic">
+                    "Tôi không xem Marketing là chi phí. Tôi xem Marketing là động cơ tăng trưởng của doanh nghiệp."
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-24">
+                <div class="p-10 bg-slate-50 rounded-[40px] border border-slate-100">
+                    <div class="w-14 h-14 bg-slate-900 text-white rounded-2xl flex items-center justify-center mb-8"><i class="fas fa-funnel-dollar text-xl"></i></div>
+                    <h4 class="text-xl font-bold mb-4">Full Funnel Strategy</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Xây dựng hành trình khép kín: Nhận diện → Quan tâm → Chuyển đổi → Tái mua.</p>
+                </div>
+                <div class="p-10 bg-slate-50 rounded-[40px] border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8"><i class="fas fa-sync-alt text-xl"></i></div>
+                    <h4 class="text-xl font-bold mb-4">Marketing - Sales Link</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Kết nối chặt chẽ dữ liệu và quy trình để tối ưu tỷ lệ chốt đơn cuối cùng.</p>
+                </div>
+                <div class="p-10 bg-slate-50 rounded-[40px] border border-slate-100">
+                    <div class="w-14 h-14 bg-slate-900 text-white rounded-2xl flex items-center justify-center mb-8"><i class="fas fa-database text-xl"></i></div>
+                    <h4 class="text-xl font-bold mb-4">Data-Driven Decision</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Ra quyết định dựa trên dữ liệu thực tế và trải nghiệm thương hiệu nhất quán.</p>
+                </div>
+            </div>
+
+            <!-- Core Competency (Slide 4) -->
+            <div class="bg-slate-900 rounded-[60px] p-12 md:p-20 text-white overflow-hidden relative">
+                <div class="relative z-10 grid md:grid-cols-2 gap-16">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-10">Năng lực cốt lõi</h3>
+                        <div class="space-y-8">
+                            <div>
+                                <h5 class="text-blue-400 font-bold mb-3 uppercase tracking-widest text-xs">Chiến lược</h5>
+                                <p class="text-lg">Xây dựng định vị thương hiệu & Lập kế hoạch Campaign tổng thể theo mùa.</p>
+                            </div>
+                            <div>
+                                <h5 class="text-blue-400 font-bold mb-3 uppercase tracking-widest text-xs">Triển khai</h5>
+                                <p class="text-lg">Digital (Meta, GG, TikTok), Content, Social & Performance Marketing.</p>
+                            </div>
+                            <div>
+                                <h5 class="text-blue-400 font-bold mb-3 uppercase tracking-widest text-xs">Quản lý</h5>
+                                <p class="text-lg">Xây dựng team, quản trị KPI, Ngân sách & ROI đa phòng ban.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="grid grid-cols-2 gap-4">
+                            <span class="px-6 py-3 bg-white/10 rounded-xl border border-white/20 font-bold">Strategy</span>
+                            <span class="px-6 py-3 bg-white/10 rounded-xl border border-white/20 font-bold">Execution</span>
+                            <span class="px-6 py-3 bg-white/10 rounded-xl border border-white/20 font-bold">Management</span>
+                            <span class="px-6 py-3 bg-white/10 rounded-xl border border-white/20 font-bold">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Abstract BG decoration -->
+                <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 blur-[120px] rounded-full -mr-48 -mt-48"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies (Slide 5-14) -->
+    <section id="casestudies" class="bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-black mb-20 text-center uppercase tracking-tighter">Case Studies Thực Chiến</h2>
+
+            <!-- Case 1: Ren Bridal (Slide 5-9) -->
+            <div class="bg-white rounded-[50px] overflow-hidden shadow-2xl mb-24 border border-slate-100">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-12 md:p-20">
+                        <div class="flex items-center space-x-3 mb-8">
+                            <span class="px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-[10px] font-black uppercase tracking-widest">Fashion & Wedding</span>
+                        </div>
+                        <h3 class="text-4xl font-black mb-6">Ren Bridal x Elsa Bridal</h3>
+                        <p class="text-slate-600 mb-8 text-lg font-medium">Bối cảnh: Ngành cưới cạnh tranh cao, cảm xúc & niềm tin quyết định doanh thu.</p>
+                        
+                        <div class="grid grid-cols-2 gap-8 mb-10">
+                            <div class="p-6 bg-slate-50 rounded-3xl">
+                                <p class="text-3xl font-black text-slate-900">100+</p>
+                                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Bookings/Tháng</p>
+                            </div>
+                            <div class="p-6 bg-blue-600 text-white rounded-3xl">
+                                <p class="text-3xl font-black">2B</p>
+                                <p class="text-[10px] font-bold opacity-80 uppercase tracking-widest">Doanh thu/Tháng</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <h5 class="font-bold text-sm uppercase text-slate-400 tracking-widest">Chiến lược & Kết quả</h5>
+                            <ul class="space-y-3">
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i> <span>Xây dựng lại hệ thống Funnel: <strong>MKT → Sales → CSKH</strong></span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i> <span>Tăng tỷ lệ chuyển đổi <strong>+5% trong 6 tháng</strong></span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i> <span>Tăng trưởng <strong>+30%</strong> trong các campaign cao điểm</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="placeholder-box min-h-[400px]">
+                        <i class="fas fa-image text-5xl opacity-10 mb-4"></i>
+                        <p class="text-xs font-bold uppercase tracking-widest">Hình ảnh dự án Ren Bridal</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 2: GOBRANDING (Slide 10-12) -->
+            <div class="bg-slate-900 text-white rounded-[50px] overflow-hidden shadow-2xl mb-24">
+                <div class="grid md:grid-cols-2">
+                    <div class="placeholder-box min-h-[400px] bg-slate-800 border-slate-700">
+                        <i class="fas fa-chart-bar text-5xl opacity-10 mb-4"></i>
+                        <p class="text-xs font-bold uppercase tracking-widest">Hình ảnh dự án GOBRANDING</p>
+                    </div>
+                    <div class="p-12 md:p-20">
+                        <div class="flex items-center space-x-3 mb-8">
+                            <span class="px-4 py-1.5 bg-blue-600 text-white rounded-full text-[10px] font-black uppercase tracking-widest">B2B Digital Agency</span>
+                        </div>
+                        <h3 class="text-4xl font-black mb-6">GOBRANDING</h3>
+                        <p class="text-slate-400 mb-8 text-lg font-medium">Vai trò: Quản lý đội ngũ <strong>12 nhân sự</strong> đa nhiệm (SEO, Content, Ads, Design).</p>
+                        
+                        <div class="space-y-6 mb-10">
+                            <div class="flex items-center justify-between p-6 bg-white/5 rounded-3xl border border-white/10">
+                                <div>
+                                    <p class="text-3xl font-black text-blue-400">+40%</p>
+                                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Traffic (6 Tháng)</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-3xl font-black text-white">20+</p>
+                                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Từ khóa Top 1-3 GG</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white/5 rounded-3xl border border-white/10">
+                                <p class="text-lg font-bold">Góp phần tăng 20% doanh thu online cho Agency.</p>
+                                <p class="text-sm text-slate-400 mt-2">Chiến lược SEO + SEM + Social kết hợp chặt chẽ với Sales để tối ưu lead.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 3: Focus Learning (Slide 13-14) -->
+            <div class="bg-white rounded-[50px] overflow-hidden shadow-2xl border border-slate-100">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-12 md:p-20">
+                        <div class="flex items-center space-x-3 mb-8">
+                            <span class="px-4 py-1.5 bg-orange-100 text-orange-700 rounded-full text-[10px] font-black uppercase tracking-widest">Education</span>
+                        </div>
+                        <h3 class="text-4xl font-black mb-6">Focus Learning</h3>
+                        <p class="text-slate-600 mb-8 text-lg font-medium italic">"Xử lý Troubleshooting cho trung tâm Ed-Tech mới ra mắt."</p>
+                        
+                        <div class="grid grid-cols-2 gap-8 mb-10">
+                            <div class="p-6 bg-orange-50 rounded-3xl">
+                                <p class="text-3xl font-black text-red-600">-50%</p>
+                                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Chi phí/Lead</p>
+                            </div>
+                            <div class="p-6 bg-slate-50 rounded-3xl">
+                                <p class="text-3xl font-black text-slate-900">15+</p>
+                                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Học viên mới/Tháng</p>
+                            </div>
+                        </div>
+                        <p class="text-sm font-bold text-slate-500 bg-slate-50 p-4 rounded-xl">Giải pháp: Tối ưu Landing Page, Tracking hành vi & Cá nhân hóa thông điệp.</p>
+                    </div>
+                    <div class="placeholder-box min-h-[400px]">
+                        <i class="fas fa-graduation-cap text-5xl opacity-10 mb-4"></i>
+                        <p class="text-xs font-bold uppercase tracking-widest">Hình ảnh dự án Focus Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Management (Slide 15-18) -->
+    <section id="leadership" class="bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter">Quản lý & Framework</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Structure -->
+                <div class="bg-slate-50 p-12 rounded-[50px] border border-slate-100">
+                    <h4 class="text-2xl font-bold mb-10 flex items-center"><i class="fas fa-sitemap mr-4 text-blue-600"></i> Cấu trúc & Vận hành</h4>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center mr-6 flex-shrink-0 font-bold text-blue-600">01</div>
+                            <div>
+                                <h6 class="font-bold mb-2">Đội ngũ đa nhiệm</h6>
+                                <p class="text-sm text-slate-500">Quản lý trực tiếp các nhóm: Content, Ads, Design và phối hợp chặt chẽ với Sales.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center mr-6 flex-shrink-0 font-bold text-blue-600">02</div>
+                            <div>
+                                <h6 class="font-bold mb-2">KPI & Tracking</h6>
+                                <p class="text-sm text-slate-500">Thiết lập mục tiêu rõ ràng, theo dõi theo tuần/tháng và đào tạo nội bộ liên tục.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center mr-6 flex-shrink-0 font-bold text-blue-600">03</div>
+                            <div>
+                                <h6 class="font-bold mb-2">Hands-on Leadership</h6>
+                                <p class="text-sm text-slate-500">Làm cùng team để xử lý vấn đề, ra quyết định dựa trên dữ liệu thực tế.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Framework -->
+                <div class="bg-slate-900 p-12 rounded-[50px] text-white relative overflow-hidden">
+                    <h4 class="text-2xl font-bold mb-10 flex items-center"><i class="fas fa-layer-group mr-4 text-blue-400"></i> Framework của tôi</h4>
+                    <div class="relative z-10 grid grid-cols-2 gap-4">
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-3xl">
+                            <h6 class="text-blue-400 font-bold text-xs uppercase mb-2 tracking-widest">Phase 1</h6>
+                            <p class="font-bold">Insight & Định vị</p>
+                        </div>
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-3xl">
+                            <h6 class="text-blue-400 font-bold text-xs uppercase mb-2 tracking-widest">Phase 2</h6>
+                            <p class="font-bold">Chiến lược Kênh</p>
+                        </div>
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-3xl">
+                            <h6 class="text-blue-400 font-bold text-xs uppercase mb-2 tracking-widest">Phase 3</h6>
+                            <p class="font-bold">Nội dung sáng tạo</p>
+                        </div>
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-3xl">
+                            <h6 class="text-blue-400 font-bold text-xs uppercase mb-2 tracking-widest">Phase 4</h6>
+                            <p class="font-bold">Tối ưu hiệu suất</p>
+                        </div>
+                        <div class="col-span-2 p-6 bg-blue-600 rounded-3xl text-center">
+                            <p class="font-bold">ĐO LƯỜNG & BÁO CÁO (ROI/ROAS/CPL)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact (Slide 19-20) -->
+    <footer id="contact" class="bg-slate-900 text-white pt-32 pb-16 rounded-t-[80px]">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-black mb-8 tracking-tighter uppercase italic">Giá trị tôi mang lại</h2>
+            <p class="text-slate-400 text-xl mb-16 leading-relaxed max-w-3xl mx-auto">
+                Tăng trưởng doanh thu thực tế – Xây dựng hệ thống bài bản – Kết nối Marketing & Sales – Sẵn sàng vừa làm vừa build.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-24">
+                <div class="p-10 bg-white/5 border border-white/10 rounded-[40px] hover:bg-white/10 transition group text-left">
+                    <i class="fas fa-phone-alt text-3xl text-blue-400 mb-8 group-hover:scale-110 transition"></i>
+                    <h4 class="text-2xl font-bold mb-2">0799 079 911</h4>
+                    <p class="text-slate-500 font-bold uppercase text-[10px] tracking-widest">Hotline/Zalo hỗ trợ trực tiếp</p>
+                </div>
+                <div class="p-10 bg-white/5 border border-white/10 rounded-[40px] hover:bg-white/10 transition group text-left">
+                    <i class="fas fa-envelope text-3xl text-blue-400 mb-8 group-hover:scale-110 transition"></i>
+                    <h4 class="text-xl font-bold mb-2 lowercase">haphamduyenanh402@gmail.com</h4>
+                    <p class="text-slate-500 font-bold uppercase text-[10px] tracking-widest">Email trao đổi công việc</p>
+                </div>
+            </div>
+
+            <div class="pt-16 border-t border-white/10 text-slate-500 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex flex-col items-center md:items-start">
+                    <span class="text-lg font-black text-white tracking-tighter">DUYÊN ANH.</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Marketing Manager Portfolio</span>
+                </div>
+                <div class="text-sm font-bold uppercase tracking-[4px]">
+                    &copy; 2024 Hà Phạm Duyên Anh
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
