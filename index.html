@@ -578,38 +578,64 @@
     const track = document.getElementById('slider-track');
     let currentIndex = 0;
     let autoSlideInterval;
-    const speed = 5000; // 5 giây trượt 1 lần
+    const speed = 3000; // 3 giây trượt 1 lần
 
-    // Hàm lấy số lượng ảnh đang hiển thị trên 1 màn hình dựa vào kích thước trình duyệt
+    // Hàm lấy số lượng ảnh đang hiển thị trên 1 màn hình
     function getVisibleItems() {
         if (window.innerWidth >= 1024) return 5;
         if (window.innerWidth >= 768) return 3;
         return 1;
     }
 
+    // Hàm lấy index tối đa có thể trượt tới
+    function getMaxIndex() {
+        const items = track.children;
+        const visibleItems = getVisibleItems();
+        return Math.max(0, items.length - visibleItems);
+    }
+
     // Hàm dịch chuyển slider
     function updateSlider() {
         const items = track.children;
-        const visibleItems = getVisibleItems();
-        const maxIndex = items.length - visibleItems;
+        if (items.length === 0) return;
 
+        const maxIndex = getMaxIndex();
+        
+        // Nếu lướt quá ảnh cuối cùng thì quay lại ảnh đầu
         if (currentIndex > maxIndex) {
-            currentIndex = 0; // Quay về ảnh đầu tiên nếu đã trượt hết
+            currentIndex = 0; 
+        }
+        // Nếu lướt lùi quá ảnh đầu tiên thì nhảy tới ảnh cuối
+        if (currentIndex < 0) {
+            currentIndex = maxIndex;
         }
 
         const itemWidth = items[0].getBoundingClientRect().width;
-        const gap = 16; // Khoảng cách gap-4 tương đương 16px
+        const gap = 12; // gap-3 tương đương 12px
         const amountToMove = (itemWidth + gap) * currentIndex;
 
         track.style.transform = `translateX(-${amountToMove}px)`;
     }
 
+    // Nút lướt tới
+    function nextSlide() {
+        currentIndex++;
+        updateSlider();
+        startAutoSlide(); // Reset lại thời gian 5 giây
+    }
+
+    // Nút lướt lùi
+    function prevSlide() {
+        currentIndex--;
+        updateSlider();
+        startAutoSlide(); // Reset lại thời gian 5 giây
+    }
+
     // Tự động chạy slider
     function startAutoSlide() {
-        stopAutoSlide(); // Đảm bảo không bị trùng lặp interval
+        stopAutoSlide(); 
         autoSlideInterval = setInterval(() => {
-            currentIndex++;
-            updateSlider();
+            nextSlide();
         }, speed);
     }
 
@@ -635,7 +661,7 @@
         startAutoSlide(); // Tiếp tục trượt lại sau khi tắt
     }
 
-    // Lắng nghe sự kiện đổi kích thước màn hình để tính toán lại slider
+    // Lắng nghe sự kiện đổi kích thước màn hình để tính lại slider
     window.addEventListener('resize', () => {
         updateSlider();
     });
@@ -647,7 +673,7 @@
         }
     });
 
-    // Bắt đầu chạy slider khi tải trang xong
+    // Khởi chạy khi tải trang xong
     document.addEventListener('DOMContentLoaded', () => {
         startAutoSlide();
     });
